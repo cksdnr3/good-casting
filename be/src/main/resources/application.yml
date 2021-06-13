@@ -1,0 +1,56 @@
+spring:
+  datasource:
+    url: jdbc:mariadb://112.169.196.99/goodc
+#    localhost:3306   //112.169.196.99/goodc
+
+    driver-class-name: org.mariadb.jdbc.Driver
+    username: goodc
+    password: Goodc1234
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+  servlet:
+    multipart:
+      enabled: true
+      location: /usr/local/GoodCasting
+#      \\DESKTOP-F9UL04V\Users\bitcamp\Pictures\Goodcasting
+#      /usr/local/GoodCasting
+      max-request-size: 100MB
+      max-file-size: 100MB
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: goodcastingofficial@gmail.com
+    password: goodc1234
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 578006738536-2ir4dlnon7607eqk0epujuvtt6rliivr.apps.googleusercontent.com
+            client-secret: CPhmeLWJZf6Pucq7ntuDbc9n
+            scope: email
+security:
+  jwt:
+    secret: secret-value
+
+shop:
+  goodcast:
+    upload:
+      path: /usr/local/GoodCasting
+
+UserController:
+  signup: Create user and returns ins JWT token
+  signin: Authenticaties user and returns ins JWT token
