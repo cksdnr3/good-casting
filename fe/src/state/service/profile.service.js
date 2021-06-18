@@ -1,6 +1,5 @@
 const { default: axios } = require('axios');
 
-const SERVER = 'http://localhost:8080';
 
 // const userInfo =
 //     typeof window !== `undefined`
@@ -9,7 +8,7 @@ const SERVER = 'http://localhost:8080';
 
 const profileList = (pageRequest) => {
     return axios({
-        url: `${SERVER}/profiles/list`,
+        url: `/profiles/list`,
         method: 'post',
         data: pageRequest,
         headers: { Authorization: 'JWT fefege..' },
@@ -18,7 +17,7 @@ const profileList = (pageRequest) => {
 
 const profileDetail = (id) => {
     return axios({
-        url: `${SERVER}/profiles/detail/${id}`,
+        url: `/profiles/detail/${id}`,
         method: 'get',
         headers: { Authorization: 'JWT fefege..' },
     });
@@ -26,7 +25,7 @@ const profileDetail = (id) => {
 
 const profileRegister = (arg) => {
     return axios({
-        url: `${SERVER}/profiles/register`,
+        url: `/profiles/register`,
         method: 'post',
         data: arg,
         headers: {
@@ -37,7 +36,7 @@ const profileRegister = (arg) => {
 
 const profileDelete = (id) => {
     return axios({
-        url: `${SERVER}/profiles/delete/${id}`,
+        url: `/profiles/delete/${id}`,
         method: 'delete',
         headers: { Authorization: localStorage.getItem('TOKEN') },
     });

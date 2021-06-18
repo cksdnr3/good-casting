@@ -1,11 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mariadb://112.169.196.99/goodc
-#    localhost:3306   //112.169.196.99/goodc
-
+    url: jdbc:mariadb://cksdnr3.cvtfaxxsxajc.us-east-2.rds.amazonaws.com:3306/cksdnr3
     driver-class-name: org.mariadb.jdbc.Driver
-    username: goodc
-    password: Goodc1234
+    username: cksdnr3
+    password: duddls!2
   jpa:
     open-in-view: false
     generate-ddl: true
@@ -18,9 +16,7 @@ spring:
   servlet:
     multipart:
       enabled: true
-      location: /usr/local/GoodCasting
-#      \\DESKTOP-F9UL04V\Users\bitcamp\Pictures\Goodcasting
-#      /usr/local/GoodCasting
+      location: C:\Users\cksdn\dev\project\imgs
       max-request-size: 100MB
       max-file-size: 100MB
   mail:
@@ -34,14 +30,6 @@ spring:
           auth: true
           starttls:
             enable: true
-  security:
-    oauth2:
-      client:
-        registration:
-          google:
-            client-id: 578006738536-2ir4dlnon7607eqk0epujuvtt6rliivr.apps.googleusercontent.com
-            client-secret: CPhmeLWJZf6Pucq7ntuDbc9n
-            scope: email
 security:
   jwt:
     secret: secret-value
@@ -49,7 +37,7 @@ security:
 shop:
   goodcast:
     upload:
-      path: /usr/local/GoodCasting
+      path: C:\Users\cksdn\dev\project\imgs
 
 UserController:
   signup: Create user and returns ins JWT token

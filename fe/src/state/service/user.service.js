@@ -1,10 +1,10 @@
 const { default: axios } = require('axios');
 
-const SERVER = 'http://localhost:8080';
+
 
 const signup = (arg) => {
     return axios({
-        url: `${SERVER}/users/signup`,
+        url: `/users/signup`,
         method: 'post',
         data: arg,
         headers: { Authorization: 'JWT fefege..' },
@@ -13,7 +13,7 @@ const signup = (arg) => {
 
 const signin = (arg) => {
     return axios({
-        url: `${SERVER}/users/signin`,
+        url: `/users/signin`,
         method: 'post',
         data: arg,
         headers: { Authorization: 'JWT fefege..' },
@@ -22,7 +22,7 @@ const signin = (arg) => {
 
 const update = (user) => {
     return axios({
-        url: `${SERVER}/users/update`,
+        url: `/users/update`,
         method: 'post',
         data: user,
         headers: { Authorization: 'JWT fefege..' },

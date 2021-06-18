@@ -60,6 +60,7 @@
   ],
   "license": "MIT",
   "main": "n/a",
+  "proxy": "http://3.36.109.220/",
   "scripts": {
     "start": "yarn develop",
     "build": "gatsby clean && gatsby build",

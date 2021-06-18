@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : shop.goodcasting : goodCasting-0.0.1-SNAPSHOT.war (exploded) archive">
+    <output-path>$PROJECT_DIR$/out/artifacts/Gradle___shop_goodcasting___goodCasting_0_0_1_SNAPSHOT_war__exploded__archive</output-path>
+    <root id="archive" name="Gradle _ shop.goodcasting _ goodCasting-0.0.1-SNAPSHOT.war (exploded) archive.war">
+      <element id="artifact" artifact-name="Gradle : shop.goodcasting : goodCasting-0.0.1-SNAPSHOT.war (exploded)" />
+    </root>
+  </artifact>
+</component>
