@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mariadb://cksdnr3.cvtfaxxsxajc.us-east-2.rds.amazonaws.com:3306/cksdnr3
+    url: jdbc:mariadb://cksdnr3seoul.cuf07tqldv8k.ap-northeast-2.rds.amazonaws.com:3307/cksdnr3
     driver-class-name: org.mariadb.jdbc.Driver
     username: cksdnr3
     password: duddls!2
@@ -16,7 +16,7 @@ spring:
   servlet:
     multipart:
       enabled: true
-      location: C:\Users\cksdn\dev\project\imgs
+      location: C:\Users\cksdn\dev\project\img
       max-request-size: 100MB
       max-file-size: 100MB
   mail:
@@ -37,7 +37,7 @@ security:
 shop:
   goodcast:
     upload:
-      path: C:\Users\cksdn\dev\project\imgs
+      path: C:\Users\cksdn\dev\project\img
 
 UserController:
   signup: Create user and returns ins JWT token
